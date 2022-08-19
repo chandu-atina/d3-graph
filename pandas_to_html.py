@@ -4,13 +4,15 @@ pd.set_option('colheader_justify', 'center')   # FOR TABLE <th>
 
 html_string = '''
 <html>
-<script src="https://www.kryogenix.org/code/browser/sorttable/sorttable.js"></script>
-  <head><title>HTML Pandas Dataframe with CSS</title></head>
-  <link rel="stylesheet" type="text/css" href="df_style.css"/>
+  <head>
+    <title>HTML Pandas Dataframe with CSS</title>
+    <script src="https://www.kryogenix.org/code/browser/sorttable/sorttable.js"></script>
+    <link rel="stylesheet" type="text/css" href="df_style.css"/> <!-- To add any additional custom css -->
+  </head>
   <body>
     {table}
   </body>
-</html>.
+</html>
 '''
 
 # creating the dataframe
